@@ -10,4 +10,5 @@ export class Appointment {
     this.provider = provider;
     this.date = date;
   }
+
 }
