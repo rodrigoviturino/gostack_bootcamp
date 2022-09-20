@@ -25,11 +25,7 @@ appointmentsRouter.post('/', (request, response) => {
     });
   }
 
-  const appointment = {
-    id: uuid(),
-    provider,
-    date: parsedDate
-  };
+  const appointment = new Appointment(provider, parsedDate);
 
   appointments.push(appointment);
 
